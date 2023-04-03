@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "65177023ece7befa162ec36790c93b7e739f400a44c66ce7beaf2dd1217e80fd"
+build_start_time: [1679842175, 527686119]
+build_end_time: [1679842182, 206799983]
+inputs:
+  "/Users/sambachamproux/.pub-cache/hosted/pub.dev/path_provider_foundation-2.2.0/macos/Classes/PathProviderPlugin.swift": [1679841226, 81355571]
+  "/Users/sambachamproux/.pub-cache/hosted/pub.dev/path_provider_foundation-2.2.0/macos/Classes/messages.g.swift": [1679841226, 82098245]
