@@ -4,7 +4,7 @@
             "outputFile": "com.example.my_app-mergeDebugResources-16:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/sambachamproux/development/my_app/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/matteolamardelle/development/SkinDetect/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

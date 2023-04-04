@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Permettre à l'application d'utiliser l'appareil photo pour prendre des photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Permettre à l'application d'accéder à votre bibliothèque de photos pour que vous puissiez choisir une image à utiliser.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -47,7 +51,5 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
-	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) needs access to your camera to take photos.</string>
 </dict>
 </plist>

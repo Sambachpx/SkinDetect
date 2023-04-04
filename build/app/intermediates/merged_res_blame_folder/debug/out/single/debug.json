@@ -22,9 +22,5 @@
     {
         "merged": "com.example.my_app-merged_res-18:/mipmap-mdpi_ic_launcher.png.flat",
         "source": "com.example.my_app-main-12:/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "com.example.my_app-merged_res-18:/drawable_launch_background.xml.flat",
-        "source": "com.example.my_app-main-12:/drawable/launch_background.xml"
     }
 ]
