@@ -71,7 +71,12 @@ class _MyHomePageState extends State<MyHomePage> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.popUntil(context, (route) => route.isFirst);
+            Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                            pageBuilder: (_, __, ___) => AddAccountPage()
+                        )
+                    );
           },
         ),
         title: Text(widget.title),

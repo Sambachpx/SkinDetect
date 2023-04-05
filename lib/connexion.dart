@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/home_page.dart';
 import 'package:my_app/photo.dart';
 import 'inscription.dart';
 
@@ -17,7 +18,12 @@ class _AddAccountPageState extends State<AddAccountPage> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.popUntil(context, (route) => route.isFirst);
+            Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                            pageBuilder: (_, __, ___) => HomePage()
+                        )
+                    );
           },
         ),
         title: const Text('Connectes toi!'),

@@ -16,7 +16,12 @@ class _AddAccountPageState2 extends State<AddAccountPage2> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.popUntil(context, (route) => route.isFirst);
+            Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                            pageBuilder: (_, __, ___) => AddAccountPage()
+                        )
+                    );
           },
         ),
         title: const Text('Créer ton compte'),
