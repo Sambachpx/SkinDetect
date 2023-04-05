@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
+
 import 'connexion.dart';
 class HomePage extends StatelessWidget {
   const HomePage({
     super.key,
   });
+  
 
   @override
   Widget build(BuildContext context) {
@@ -17,15 +20,16 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
-              Image.asset("/Users/matteolamardelle/development/SkinDetect/assets/SkinDetect.png"),
-              Padding(padding: EdgeInsets.all(10)),
+              const Padding(padding: EdgeInsets.all(10)),
               const Text(
                 "Bienvenue",
                 style: TextStyle(
                   fontSize: 42,
                 ),
               ),
-
+              Image.asset(
+                "assets/SkinDetect.png",
+              ),
               const Text("Cliquez sur le menu",
                 style: TextStyle(
                   fontSize: 25,
@@ -33,18 +37,18 @@ class HomePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               ElevatedButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       padding: MaterialStatePropertyAll(EdgeInsets.all(10))
                   ),
                   onPressed: () {
                     Navigator.push(
                         context,
                         PageRouteBuilder(
-                            pageBuilder: (_, __, ___) => AddAccountPage()
+                            pageBuilder: (_, __, ___) => const AddAccountPage()
                         )
                     );
                   },
-                  child: Text("Connexion/Inscription")),
+                  child: const Text("Connexion/Inscription")),
 
 
             ],

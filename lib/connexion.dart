@@ -14,8 +14,15 @@ class _AddAccountPageState extends State<AddAccountPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.popUntil(context, (route) => route.isFirst);
+          },
+        ),
         title: const Text('Connectes toi!'),
       ),
+
       body: Container(
         margin: const EdgeInsets.all(20),
         child: Form(
