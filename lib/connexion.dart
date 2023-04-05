@@ -24,7 +24,7 @@ class _AddAccountPageState extends State<AddAccountPage> {
       ),
 
       body: Container(
-        margin: const EdgeInsets.all(20),
+        margin: const EdgeInsets.all(50),
         child: Form(
           child: Column(
             children: [
@@ -50,7 +50,7 @@ class _AddAccountPageState extends State<AddAccountPage> {
                   // code when the user saves the form.
                 },
               ),
-              Padding(padding: EdgeInsets.all(10)),
+              Padding(padding: EdgeInsets.all(20)),
               ElevatedButton(
                   style: ButtonStyle(
                       padding: MaterialStatePropertyAll(EdgeInsets.all(10))
@@ -64,6 +64,7 @@ class _AddAccountPageState extends State<AddAccountPage> {
                     );
                   },
                   child: Text("se connecter")),
+                  Padding(padding: EdgeInsets.all(10)),
               ElevatedButton(
                   style: ButtonStyle(
                       padding: MaterialStatePropertyAll(EdgeInsets.all(10))

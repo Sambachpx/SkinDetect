@@ -13,10 +13,16 @@ class _AddAccountPageState2 extends State<AddAccountPage2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.popUntil(context, (route) => route.isFirst);
+          },
+        ),
         title: const Text('Créer ton compte'),
       ),
       body: Container(
-        margin: const EdgeInsets.all(20),
+        margin: const EdgeInsets.all(40),
         child: Form(
           child: Column(
             children: [
@@ -65,7 +71,7 @@ class _AddAccountPageState2 extends State<AddAccountPage2> {
                   // code when the user saves the form.
                 },
               ),
-              Padding(padding: EdgeInsets.all(10)),
+              Padding(padding: EdgeInsets.all(20)),
               ElevatedButton(
                   style: ButtonStyle(
                       padding: MaterialStatePropertyAll(EdgeInsets.all(10))

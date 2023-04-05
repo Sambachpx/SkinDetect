@@ -20,16 +20,16 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
-              const Padding(padding: EdgeInsets.all(10)),
+              Image.asset(
+                "assets/logo-removebg-preview.png",
+              ),
               const Text(
                 "Bienvenue",
                 style: TextStyle(
                   fontSize: 42,
                 ),
               ),
-              Image.asset(
-                "assets/SkinDetect.png",
-              ),
+              
               const Text("Cliquez sur le menu",
                 style: TextStyle(
                   fontSize: 25,
