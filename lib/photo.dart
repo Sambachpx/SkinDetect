@@ -17,7 +17,7 @@ class _Photo extends State<Photo> {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.deepPurple,
       ),
       home: const MyHomePage(title: 'Photo'),
     );
